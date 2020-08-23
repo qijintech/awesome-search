@@ -11,8 +11,8 @@
 ## 要支持的博客
 
 - [x] [美团点评技术博客团队](https://tech.meituan.com/)(413篇)
-- [x] 字节跳动技术团队 - 微信公众号
+- [x] 字节跳动技术团队 - 微信公众号(105篇)
 - [x] 爱奇艺技术产品团队 - 微信公众号(106篇)
-- [ ] [淘宝数据库内核月报](http://mysql.taobao.org/monthly/)
+- [x] [淘宝数据库内核月报](http://mysql.taobao.org/monthly/)(693篇)
 - [ ] [R大知乎回答](https://www.zhihu.com/people/rednaxelafx/answers)
 - [x] 闲鱼技术 - 微信公众号(190篇)
