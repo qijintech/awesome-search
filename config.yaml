@@ -1,4 +1,14 @@
 wechat:
-    uin: asdfasdf
-    key: asdfasdf
-    token: asdfasdf 
+    uin: MjM2MDI0OTIyMQ%3D%3D
+    key: 10b5f81a68366223beb5cfa530ac5c1a230493f6af4093821887b7d9717f2e3e08a594666a61f18c29d8dfb90181cab21065a00cfc79afd4c42c8dfb609e7b11476d78bb332c982c3cb73184e315218306c414f332142d8ccf4e56fafeb3d79e261fe763d332f9393bbaebcccec8b02c10cad6cc091936152f206307174c2287
+    token: 1078_e7optkDBlfb2GtVnX-sZGDhZOXOJjffQhbjfOA~~ 
+
+mysql:
+    host: localhost
+    username: admin
+    password: Admin_@123
+    database: incubator
+    tb: awesome_search_blog
+
+es:
+    host: http://49.233.184.252/es

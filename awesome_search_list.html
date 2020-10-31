@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Awesome Search</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+    <style>
+        .el-row {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        /* .el-col {
+            border-radius: 4px;
+        }
+
+        .bg-purple-dark {
+            background: #99a9bf;
+        }
+
+        .bg-purple {
+            background: #d3dce6;
+        }
+
+        .bg-purple-light {
+            background: #e5e9f2;
+        } */
+
+        .grid-content {
+            border-radius: 4px;
+            min-height: 36px;
+        }
+
+        /*
+        .row-bg {
+            padding: 10px 0;
+            background-color: #f9fafc;
+        } */
+        .el-header,
+        .el-footer {
+            color: #333;
+            text-align: center;
+        }
+
+        el-main {
+            background-color: #E9EEF3;
+            color: #333;
+            text-align: center;
+        }
+
+        body>.el-container {
+            margin-bottom: 40px;
+        }
+
+        .el-container:nth-child(5) .el-aside,
+        .el-container:nth-child(6) .el-aside {
+            line-height: 260px;
+        }
+
+        .el-container:nth-child(7) .el-aside {
+            line-height: 320px;
+        }
+
+        ul {
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            padding-inline-start: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-main>
+                <el-row>
+                    <el-col :span="6" v-for="blog in blogs" :key="" style="text-align: center; margin-top: 100px;">
+                        <div class="grid-content bg-purple">
+                            <el-link type="primary" :href="blog.link" target="blank">
+                                <el-row>
+                                    <el-row>
+                                        <el-image style="width: 300px; height: 180px" :src="blog.cover" :fit="fit">
+                                        </el-image>
+                                    </el-row>
+                                    {{ blog.title }}
+                                </el-row>
+                            </el-link>
+
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-main>
+            <el-footer></el-footer>
+        </el-container>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                blogs: [{
+                    "title": "美团点评技术博客",
+                    "link": "https://tech.meituan.com/",
+                    "cover": "meituan_jishu_tuandui.jpg"
+                }, {
+                    "title": "字节跳动技术团队",
+                    "link": "#",
+                    "cover": "zijie_tiaodong.jpg"
+                }, {
+                    "title": "爱奇艺技术技术产品团队",
+                    "link": "",
+                    "cover": "iqiyi.jpg"
+                }, {
+                    "title": "闲鱼技术",
+                    "link": "",
+                    "cover": "xianyu.jpg"
+                }, {
+                    "title": "阿里云数据库内核月报",
+                    "link": "http://mysql.taobao.org/monthly/",
+                    "cover": "aliyun.jpg"
+                }, {
+                    "title": "R大知乎回答",
+                    "link": "https://www.zhihu.com/people/rednaxelafx/answers",
+                    "cover": "r_da.jpg"
+                }],
+            },
+        })
+    </script>
+</body>
+
+</html>
